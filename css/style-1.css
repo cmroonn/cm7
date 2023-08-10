@@ -9385,7 +9385,8 @@ form.popup-timer__form {
 
 .welcome-7 .welcome__offer__title span {
   font-size: calc(100 / 1600 * 100vw);
-  margin-bottom: calc(6 / 1600 * 100vw);
+  margin-bottom: calc(23 / 1600 * 100vw);
+  display: block;
 }
 
 .welcome-7 .welcome__offer__title {
