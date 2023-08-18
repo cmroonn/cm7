@@ -9445,7 +9445,7 @@ form.popup-timer__form {
 
   .welcome-7 .welcome__offer__title span {
     font-size: calc(50 / 360 * 100vw);
-    margin-bottom: calc(3 / 360 * 100vw);
+    margin-bottom: calc(14 / 360 * 100vw);
   }
 
   .welcome-7 {
@@ -9650,6 +9650,7 @@ form.popup-timer__form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 calc(10 / 360 * 100vw);
   }
 
   .free-events__head svg {
@@ -10409,11 +10410,11 @@ form.popup-timer__form {
   }
 
   .swiper-button-prev-2 {
-    left: calc(112 / 360 * 100vw);
+    left: calc(115 / 360 * 100vw);
   }
 
   .swiper-button-next-2 {
-    right: calc(112 / 360 * 100vw);
+    right: calc(115 / 360 * 100vw);
   }
 }
 
