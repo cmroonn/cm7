@@ -485,6 +485,7 @@ a.basic-btn {
   position: absolute;
   bottom: 0;
   left: 29.375vw;
+  outline: none;
   cursor: pointer;
 }
 .video-review__prev.swiper-button-disabled rect {
@@ -502,6 +503,7 @@ a.basic-btn {
   bottom: 0;
   right: 29.375vw;
   cursor: pointer;
+  outline: none;
 }
 .video-review__next.swiper-button-disabled rect {
   fill: #dfdfdf;
@@ -10391,6 +10393,7 @@ form.popup-timer__form {
 .swiper-button-prev-2 {
   position: absolute;
   top: calc(350 / 1600 * 100vw);
+  cursor: pointer;
 }
 
 .swiper-button-next-2 {
