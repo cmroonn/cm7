@@ -440,7 +440,9 @@ a.basic-btn {
 @media (max-width: 500px) {
   .video-reviews__swiper {
     padding-bottom: 27.7777777778vw;
-    max-width: 72.2222222222vw;
+    max-width: unset;
+    padding-left: calc(26 / 360 * 100vw);
+    padding-right: calc(26 / 360 * 100vw);
   }
   .video-reviews__swiper video {
     height: 111.1111111111vw;
@@ -490,8 +492,9 @@ a.basic-btn {
 }
 @media (max-width: 500px) {
   .video-review__prev {
-    left: 18.0555555556vw;
+    left: calc(110 / 360 * 100vw);
   }
+
 }
 
 .video-review__next {
@@ -504,8 +507,11 @@ a.basic-btn {
   fill: #dfdfdf;
 }
 @media (max-width: 500px) {
+  /*.video-review__next {*/
+  /*  right: 18.0555555556vw;*/
+  /*}*/
   .video-review__next {
-    right: 18.0555555556vw;
+    right: calc(110 / 360 * 100vw);
   }
 }
 
@@ -4300,16 +4306,20 @@ a.basic-btn {
   }
   .level__content__info__points h3 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
-    font-size: 5.5555555556vw;
-    text-align: center;
+    font-size: calc(16 / 360 * 100vw);
+    text-align: left;
+    line-height: 130%;
+    margin-bottom: calc(25 / 360 * 100vw);
+    margin-left: calc(5 / 360 * 100vw);
+
   }
   .level__content__info__points h3 img {
-    width: 14vw;
-    height: 14vw;
-    margin-right: 0;
+    width: 16vw;
+    height: 16vw;
+    margin-right: calc(12 / 360 * 100vw);
     transform: rotate(-12deg);
   }
 }
@@ -4323,6 +4333,7 @@ a.basic-btn {
 @media (max-width: 500px) {
   .level__content__list {
     margin-left: 9.4444444444vw;
+    padding-right: calc(8 / 360 * 100vw);
   }
   .level__content__list li {
     margin-bottom: 4.1666666667vw;
@@ -10341,12 +10352,14 @@ form.popup-timer__form {
 
   .level2 .level__content__plate {
     padding-left: calc(10 / 360 * 100vw);
-    padding-right: calc(10 / 360 * 100vw);
+    padding-right: calc(8 / 360 * 100vw);
+    width: calc(320 / 360 * 100vw);
   }
   .level2 .level__content__pic img {
     width: calc(320 / 360 * 100vw);
     height: calc(405 / 360 * 100vw);
     border-radius: calc(10 / 360 * 100vw);
+    object-fit: cover;
   }
 }
 
@@ -10679,5 +10692,31 @@ form.popup-timer__form {
 
   .courses__content-accordion.active {
     height: calc(3920 / 360 * 100vw);
+  }
+}
+
+
+.video-reviews__desc svg {
+  display: none;
+}
+@media (max-width: 500px) {
+  .video-reviews__desc svg {
+    display: block;
+    width: calc(58 / 360 * 100vw);
+    height: calc(40 / 360 * 100vw);
+    margin-top: calc(12 / 360 * 100vw);
+  }
+
+  .video-reviews__desc-2 {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: calc(260 / 360 * 100vw);
+    max-width: unset;
+  }
+
+  .video-reviews__content {
+    width: calc(360 / 360 * 100vw);
+    margin-left: calc(-10 / 360 * 100vw);
   }
 }
