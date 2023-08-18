@@ -471,6 +471,7 @@ a.basic-btn {
     font-size: 4.4444444444vw;
     bottom: 5.5555555556vw;
     padding: 4.1666666667vw 9.7222222222vw;
+    height: unset;
     border-radius: 2.7777777778vw;
   }
 }
