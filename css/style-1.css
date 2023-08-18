@@ -10514,6 +10514,7 @@ form.popup-timer__form {
 .courses__item-dop span {
   color: rgba(255, 255, 255, 0.6);
   display: block;
+  font-size: calc(16 / 1600 * 100vw);
 }
 
 .courses__item-dop h3 {
@@ -10575,9 +10576,70 @@ form.popup-timer__form {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  font-size: calc(10 / 1600 * 100vw);
 
 }
 
 .courses__item-dop .book__content__get__policy a {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 500px) {
+
+  .courses__item-dop__img {
+    display: none;
+  }
+
+  .courses__item-dop {
+    padding: calc(34 / 360 * 100vw) calc(20 / 360 * 100vw) calc(20 / 360 * 100vw);
+    text-align: center;
+  }
+
+  .courses__item-dop span {
+    font-size: calc(16 / 360 * 100vw);
+    margin-bottom: calc(10 / 360 * 100vw);
+  }
+
+  .courses__item-dop h3 {
+    font-size: calc(28 / 360 * 100vw);
+    margin-bottom: calc(21 / 360 * 100vw);
+  }
+
+  .courses__item-dop p {
+    font-size: calc(17 / 360 * 100vw);
+    margin-bottom: calc(18 / 360 * 100vw);
+  }
+
+  .courses__item-dop ul {
+    padding-left: calc(10 / 360 * 100vw);
+  }
+
+  .courses__item-dop ul li {
+    font-size: calc(17 / 360 * 100vw);
+    margin-bottom: calc(15 / 360 * 100vw);
+    width: unset;
+    text-align: left;
+  }
+
+  .courses__item-dop ul li:last-child {
+    margin-bottom: 0;
+  }
+
+  .courses__item-dop ul li:before {
+    width: calc(8 / 360 * 100vw);
+    height: calc(8 / 360 * 100vw);
+    margin-right: calc(19 / 360 * 100vw);
+    margin-top: calc(6 / 360 * 100vw);
+  }
+
+  .courses__item-dop__btn {
+    width: calc(300 / 360 * 100vw);
+    height: calc(80 / 360 * 100vw);
+    margin-top: calc(45 / 360 * 100vw);
+    font-size: calc(14 / 360 * 100vw);
+  }
+
+  .courses__item-dop .book__content__get__policy {
+    font-size: calc(10 / 360 * 100vw);
+  }
 }
