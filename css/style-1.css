@@ -450,10 +450,10 @@ a.basic-btn {
 
 .video-reviews__plate {
   background-color: #fff;
-  padding: calc(10 / 1600 * 100vw) 2.1875vw;
+  /*padding: calc(10 / 1600 * 100vw) 2.1875vw;*/
   border-radius: 0.625vw;
   position: absolute;
-  bottom: 1.25vw;
+  bottom: calc(20 / 1600 * 100vw);
   left: 50%;
   transform: translate(-50%, 0);
   font-weight: 700;
@@ -465,14 +465,17 @@ a.basic-btn {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: calc(200 / 1600 * 100vw);
 }
 @media (max-width: 500px) {
   .video-reviews__plate {
     font-size: 4.4444444444vw;
     bottom: 5.5555555556vw;
-    padding: 4.1666666667vw 9.7222222222vw;
-    height: unset;
+    /*padding: 4.1666666667vw 9.7222222222vw;*/
+    height: calc(50 / 360 * 100vw);
     border-radius: 2.7777777778vw;
+    width: calc(200 / 360 * 100vw);
+
   }
 }
 
@@ -9497,7 +9500,7 @@ form.popup-timer__form {
   }
   .welcome__points__point {
     background-image: none;
-    width: auto;
+    width: 100%;
     height: auto;
     padding: 0;
     font-size: calc(16 / 360 * 100vw);
@@ -10021,8 +10024,9 @@ form.popup-timer__form {
   height: calc(650 / 1600 * 100vw);
   display: block;
   margin-top: calc(60 / 1600 * 100vw);
-  position: sticky;
-  top: 0;
+  position: absolute;
+  top: calc(183 / 1600 * 100vw);
+
 }
 
 .pochet__left {
@@ -10068,6 +10072,8 @@ form.popup-timer__form {
     background-image: url("../images/pochet-bg-mob.jpeg");
     padding: calc(70 / 360 * 100vw) 0;
     height: unset;
+    margin-bottom: calc(70 / 360 * 100vw);
+    margin-top: calc(80 / 360 * 100vw);
   }
 
   .pochet__wrap {
@@ -10105,6 +10111,8 @@ form.popup-timer__form {
     width: calc(400 / 360 * 100vw);
     height: calc(400 / 360 * 100vw);
     margin-left: calc(30 / 360 * 100vw);
+    position: static;
+    display: block;
   }
 
   .pochet__plate {
@@ -10641,5 +10649,26 @@ form.popup-timer__form {
 
   .courses__item-dop .book__content__get__policy {
     font-size: calc(10 / 360 * 100vw);
+  }
+}
+
+.courses__content-accordion {
+  height: calc(1350 / 1600 * 100vw);
+  overflow: hidden;
+  transition: .3s ease;
+}
+
+.courses__content-accordion.active {
+  height: calc(2050 / 1600 * 100vw);
+  transition: .3s ease;
+}
+
+@media (max-width: 500px) {
+  .courses__content-accordion {
+    height: calc(2620 / 360 * 100vw);
+  }
+
+  .courses__content-accordion.active {
+    height: calc(3920 / 360 * 100vw);
   }
 }

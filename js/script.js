@@ -11,6 +11,22 @@ document.addEventListener("DOMContentLoaded", function () {
   // } catch (e) {
   //   console.log(e);
   // }
+
+  try {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".pochet__notebook", {
+      scrollTrigger: {
+        trigger: ".pochet__notebook",
+        scrub: 3
+      },
+      top: 300,
+      ease: "linear",
+      duration: 10
+    });
+  } catch(e) {
+    console.log(e);
+  }
+
   var popupTimeout = setTimeout(openPopup, 300000, 'popupTimer');
   clearTimeout(popupTimeout);
   var isOpenPopup = false;
@@ -620,6 +636,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       }
     });
+  } catch (e) {
+    console.log(e);
+  }
+
+  try {
+    const btn = document.querySelector(".courses__show-more");
+    const accordion = document.querySelector(".courses__content-accordion");
+
+    btn.addEventListener("click", function () {
+      accordion.classList.toggle("active");
+      if (accordion.classList.contains("active")) {
+        btn.innerText = 'Скрыть';
+      } else {
+        btn.innerText = 'Показать все курсы';
+      }
+    })
   } catch (e) {
     console.log(e);
   }
