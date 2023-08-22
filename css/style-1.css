@@ -9475,6 +9475,10 @@ form.popup-timer__form {
     margin-top: calc(65 / 360 * 100vw);
     line-height: 140%;
   }
+
+  .welcome-7 .welcome__offer__desc b {
+    font-weight: 400;
+  }
 }
 
 .welcome__points {
