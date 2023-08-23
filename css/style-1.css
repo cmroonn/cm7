@@ -10212,6 +10212,20 @@ form.popup-timer__form {
   position: relative;
 }
 
+.case-war__woman {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .case-war__woman {
+    position: absolute;
+    width: calc(60 / 360 * 100vw);
+    height: calc(60 / 360 * 100vw);
+    bottom: calc(100 / 360 * 100vw);
+    right: calc(-10 / 360 * 100vw);
+  }
+}
+
 .case-war__item__link {
   position: absolute;
   top: 0;
@@ -10259,6 +10273,7 @@ form.popup-timer__form {
 .case-war__item__right {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .case-war__desc {
