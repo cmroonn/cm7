@@ -10223,6 +10223,7 @@ form.popup-timer__form {
     height: calc(60 / 360 * 100vw);
     bottom: calc(100 / 360 * 100vw);
     right: calc(-10 / 360 * 100vw);
+    display: block;
   }
 }
 
