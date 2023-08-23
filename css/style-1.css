@@ -10428,6 +10428,7 @@ form.popup-timer__form {
   position: absolute;
   top: calc(350 / 1600 * 100vw);
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .swiper-button-next-2 {
