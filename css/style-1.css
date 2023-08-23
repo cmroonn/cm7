@@ -10155,6 +10155,10 @@ form.popup-timer__form {
     background-size: 100% 100%;
     padding: calc(24 / 360 * 100vw) calc(20 / 360 * 100vw);
     margin-top: calc(-120 / 360 * 100vw);
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
   }
 
   .pochet__item span {
