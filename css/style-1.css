@@ -9503,6 +9503,7 @@ form.popup-timer__form {
   display: flex;
   align-items: center;
   line-height: 140%;
+  border-radius: calc(7 / 1600 * 100vw);
 }
 
 .welcome__points__point img {
@@ -10153,6 +10154,7 @@ form.popup-timer__form {
     height: calc(280 / 360 * 100vw);
     background-size: 100% 100%;
     padding: calc(24 / 360 * 100vw) calc(20 / 360 * 100vw);
+    margin-top: calc(-120 / 360 * 100vw);
   }
 
   .pochet__item span {
@@ -10429,6 +10431,41 @@ form.popup-timer__form {
   .swiper-button-next-2 {
     right: calc(115 / 360 * 100vw);
   }
+
+  .swiper-button-next-2:hover svg rect,
+  .swiper-button-prev-2:hover svg rect{
+    fill: #fff;
+    transition: .2s ease;
+
+  }
+
+  .swiper-button-next-2:hover svg path,
+  .swiper-button-prev-2:hover svg path{
+    stroke: #0061f4;
+    transition: .2s ease;
+  }
+
+
+  .swiper-button-next-2:active svg rect,
+  .swiper-button-prev-2:active svg rect{
+    fill: #0061f4;
+    transition: .2s ease;
+
+  }
+
+  .swiper-button-next-2:active svg path,
+  .swiper-button-prev-2:active svg path{
+    stroke: #fff;
+    transition: .2s ease;
+  }
+
+  .swiper-button-next-2:focus,
+  .swiper-button-prev-2:focus,
+  .swiper-button-next-2:active,
+  .swiper-button-prev-2:active{
+    outline: none;
+  }
+
 }
 
 
