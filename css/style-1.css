@@ -163,7 +163,7 @@ button {
   width: 100%;
   justify-content: space-between;
   border-radius: 0.625vw;
-  z-index: 2;
+  z-index: 3;
 }
 .cookie p,
 .cookie a {
@@ -246,6 +246,11 @@ a.basic-btn {
   font-size: 1.5vw;
   max-width: 39.375vw;
 }
+
+.get-free-access-4 {
+  position: sticky;
+  bottom: 0;
+}
 .get-free-access img {
   width: 4.34875vw;
   height: 4.4375vw;
@@ -293,6 +298,8 @@ a.basic-btn {
     padding: 4.1666666667vw 5.9722222222vw;
   }
 }
+
+
 
 .zapis2 {
   margin-top: calc(120 / 1600 * 100vw);
@@ -487,6 +494,7 @@ a.basic-btn {
   left: 29.375vw;
   outline: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .video-review__prev.swiper-button-disabled rect {
   fill: #dfdfdf;
@@ -504,6 +512,7 @@ a.basic-btn {
   right: 29.375vw;
   cursor: pointer;
   outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .video-review__next.swiper-button-disabled rect {
   fill: #dfdfdf;
